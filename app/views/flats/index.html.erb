@@ -1,0 +1,10 @@
+
+<div class="container">
+  <% @flats.each do |flat| %>
+    <div class="card">
+      <%= link_to flat_path(flat["id"]) do %>
+        <h4><%= flat["name"] %></h4>
+      <% end %>
+    </div>
+  <% end %>
+</div>
